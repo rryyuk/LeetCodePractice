@@ -32,8 +32,6 @@ public class DeleteNodeAtGivenPositionInLinkedList {
             nextNode = tempNode.next;
             tempNode.next = nextNode.next;
             nextNode = null;
-
-
         }
         System.out.println(head.val);
         System.out.println(head.next.val);
