@@ -11,7 +11,7 @@ public class Q136SingleNumber {
         return nonRepeating;
     }
     public static void main(String[] args){
-        int[] num = {1,1,2,2,4};
+        int[] num = {1,1,2,2,4,3,3};
         System.out.println(singleNumber(num));
     }
 }
