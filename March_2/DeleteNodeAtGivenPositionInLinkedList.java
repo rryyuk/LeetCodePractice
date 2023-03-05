@@ -1,6 +1,7 @@
 package March_2;
 
 public class DeleteNodeAtGivenPositionInLinkedList {
+
     public static class ListNode {
         public int val;
         public ListNode next;
@@ -9,6 +10,7 @@ public class DeleteNodeAtGivenPositionInLinkedList {
         public ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
     public static void main(String[] args){
+
         ListNode c = new ListNode(4,null);
         ListNode b = new ListNode(3,c);
         ListNode a = new ListNode(2,b);
