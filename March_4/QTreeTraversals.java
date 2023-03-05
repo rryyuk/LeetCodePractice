@@ -41,10 +41,8 @@ public class QTreeTraversals {
     public static void main(String[] args) {
         Node root = new Node(1);
         root.right = new Node(2);
-//        root.left.left = new Node(3);
-//        root.left.right = new Node(30);
         root.right.left = new Node(3);
-//        root.right.right = new Node(300);
+
 
         System.out.print("Inorder Traversal: ");
         Inorder(root);
