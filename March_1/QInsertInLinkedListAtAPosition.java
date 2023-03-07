@@ -9,42 +9,38 @@ public class QInsertInLinkedListAtAPosition {
         public ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
     public static void main(String[] args) {
-        ListNode c1 = new ListNode(4,null);
-        ListNode b1 = new ListNode(3,c1);
-        ListNode a1 = new ListNode(2,b1);
-        ListNode head1 = new ListNode(1,a1);
+        ListNode c = new ListNode(4,null);
+        ListNode b = new ListNode(3,c);
+        ListNode a = new ListNode(2,b);
+        ListNode head = new ListNode(1,a);
 
-        ListNode c2 = new ListNode(5,null);
-        ListNode b2 = new ListNode(4,c2);
-        ListNode a2 = new ListNode(3,b2);
-        ListNode head2 = new ListNode(2,a2);
+        ListNode tempNode = head;
+        ListNode newNode = new ListNode();
+        int value  = 10;
+        newNode.val = value;
+        int n = 4;
 
-        ListNode temp1 = head1;
-        ListNode temp2 = head2;
+        if(head == null) {
+            System.out.println("null");
+        } else if(n == 1) {
 
-        ListNode head3 = new ListNode();
-        ListNode current = head3;
-
-        while(temp1 != null && temp2 != null) {
-            if(temp1.val == temp2.val) {
-                ListNode tempNewNode = new ListNode(temp1.val);
-                current.next = tempNewNode;
-                current = current.next;
-                temp1 = temp1.next;
-                temp2 = temp2.next;
+            newNode.next = head;
+            head = newNode;
+        } else {
+            int i = 0;
+            while(i < n -1) {
+                tempNode = tempNode.next;
+                i++;
             }
-            else if(temp1.val > temp2.val){
-                temp2 = temp2.next;
-            }
-            else if(temp1.val < temp2.val){
-                temp1 = temp1.next;
-            }
+            newNode.next = tempNode.next;
+            tempNode.next = newNode;
         }
+        System.out.println(head.val);
+        System.out.println(head.next.val);
+        System.out.println(head.next.next.val);
+        System.out.println(head.next.next.next.val);
+        System.out.println(head.next.next.next.next.val);
 
-        System.out.println(head3.val);
-        System.out.println(head3.next.val);
-        System.out.println(head3.next.next.val);
-        System.out.println(head3.next.next.next.val);
-        System.out.println(head3.next.next.next.next.val);
+
     }
 }

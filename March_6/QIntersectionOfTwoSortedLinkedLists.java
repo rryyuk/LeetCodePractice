@@ -14,46 +14,45 @@ public class QIntersectionOfTwoSortedLinkedLists {
         public ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
 
-    public static ListNode front ;
-    public static ListNode rear ;
-
-    public static void enqueue(int data) {
-        ListNode insertingData = new ListNode(data);
-        if(front == null) {
-            front = rear = insertingData;
-        }
-        rear.next = insertingData;
-        rear = insertingData;
-
-    }
-    public static int dequeue() {
-        if(front == null) {
-            System.out.println("Empty queue");
-        }
-        int element = front.val;
-        front = front.next;
-        return element;
-    }
-
-    public static void display() {
-        ListNode temp = front;
-        if(temp == null) {
-            System.out.println("Empty queue");
-        } else {
-            while(temp != null) {
-                System.out.print(temp.val +" ");
-                temp = temp.next;
-            }
-            System.out.println();
-        }
-    }
     public static void main(String[] args) {
-        enqueue(1);
-        enqueue(2);
-        enqueue(3);
-        enqueue(4);
-        display();
-        dequeue();
-        display();
+        ListNode c1 = new ListNode(4,null);
+        ListNode b1 = new ListNode(3,c1);
+        ListNode a1 = new ListNode(2,b1);
+        ListNode head1 = new ListNode(1,a1);
+
+        ListNode c2 = new ListNode(5,null);
+        ListNode b2 = new ListNode(4,c2);
+        ListNode a2 = new ListNode(3,b2);
+        ListNode head2 = new ListNode(2,a2);
+
+        ListNode temp1 = head1;
+        ListNode temp2 = head2;
+
+        ListNode head3 = new ListNode();
+        ListNode current = head3;
+
+        while(temp1 != null && temp2 != null) {
+            if(temp1.val == temp2.val) {
+                ListNode tempNewNode = new ListNode(temp1.val);
+                current.next = tempNewNode;
+                current = current.next;
+                temp1 = temp1.next;
+                temp2 = temp2.next;
+            }
+            else if(temp1.val > temp2.val){
+                temp2 = temp2.next;
+            }
+            else if(temp1.val < temp2.val){
+                temp1 = temp1.next;
+            }
+        }
+
+        System.out.println(head3.val);
+        System.out.println(head3.next.val);
+        System.out.println(head3.next.next.val);
+        System.out.println(head3.next.next.next.val);
+        System.out.println(head3.next.next.next.next.val);
+
+
     }
 }
