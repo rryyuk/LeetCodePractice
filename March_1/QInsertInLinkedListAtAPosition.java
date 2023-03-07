@@ -33,10 +33,10 @@ public class QInsertInLinkedListAtAPosition {
                 temp1 = temp1.next;
                 temp2 = temp2.next;
             }
-            if(temp1.val > temp2.val){
+            else if(temp1.val > temp2.val){
                 temp2 = temp2.next;
             }
-            if(temp1.val < temp2.val){
+            else if(temp1.val < temp2.val){
                 temp1 = temp1.next;
             }
         }
