@@ -22,7 +22,7 @@ public class QLevelOrderBinaryTreeTraversal {
             this.right = right;
         }
     }
-    public static List<Integer> leftView(Node root, List<Integer> order, int level) {
+    public static List<Integer> rightView(Node root, List<Integer> order, int level) {
         if(root == null) {
             System.out.println();
         }
@@ -31,8 +31,8 @@ public class QLevelOrderBinaryTreeTraversal {
         }else{
             order.set(level,root.val);
         }
-        leftView(root.right,order,level+1);
-        leftView(root.left,order,level+1);
+        rightView(root.right,order,level+1);
+        rightView(root.left,order,level+1);
         return order;
 
     }
