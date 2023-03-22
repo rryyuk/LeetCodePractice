@@ -34,26 +34,25 @@ public class OwnProgram {
     }
     public static void insert(Node root,int value, int target, boolean isInserted) {
 
-        if (root != null) {
-            if(root.val == target) {
-                if(root.left == null){
-                    root.left = new Node(value);
-                } else if (root.right == null){
-                    root.right = new Node(value);
-                } else {
-                    System.out.println("No empty space");
-                }
-                isInserted = true;
-            }
+        if (root == null) {
+            return;
         }
 
-        if(root != null) {
-            insert(root.left,value, target, isInserted);
-            if(!isInserted){
-                insert(root.right,value, target,isInserted);
+        if(root.val == target) {
+            if(root.left == null){
+                root.left = new Node(value);
+            } else if (root.right == null){
+                root.right = new Node(value);
+            } else {
+                System.out.println("No empty space");
             }
+            isInserted = true;
         }
 
+        insert(root.left,value, target, isInserted);
+        if(!isInserted){
+            insert(root.right,value, target,isInserted);
+        }
 
     }
 
