@@ -26,9 +26,11 @@ public class QLevelOrderBinaryTreeTraversal {
         if(root == null) {
             System.out.println();
         }
+
         if(order.size()==level) {
             order.add(root.val);
-        }else{
+        }
+        else{
             order.set(level,root.val);
         }
         rightView(root.right,order,level+1);

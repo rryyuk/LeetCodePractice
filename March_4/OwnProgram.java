@@ -60,10 +60,10 @@ public class OwnProgram {
         Node a = new Node(1);
         a.left = new Node(2);
         a.right = new Node(3);
-        a.left.left = new Node(4);
-        a.left.right = new Node(5);
+        a.right.left = new Node(4);
+        a.right.right = new Node(5);
 
-        insert(a,10,3,false);
+        insert(a,10,2,false);
         print(a);
 
 
