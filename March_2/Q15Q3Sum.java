@@ -23,7 +23,6 @@ public class Q15Q3Sum {
                         while (low < high && nums[low] == nums[low + 1]) {
                             high--;
                         }
-
                         low++;
                         high--;
                     } else if (nums[low] + nums[high] < sum) {
