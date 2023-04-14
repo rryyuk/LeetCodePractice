@@ -31,10 +31,12 @@ public class DeleteNodeAtGivenPositionInLinkedList {
                 tempNode = tempNode.next;
                 i++;
             }
+
             nextNode = tempNode.next;
             tempNode.next = nextNode.next;
             nextNode = null;
         }
+
         System.out.println(head.val);
         System.out.println(head.next.val);
         System.out.println(head.next.next.val);
