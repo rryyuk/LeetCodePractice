@@ -7,7 +7,6 @@ class Solution {
                 index = i;
             }
         }
-        
         if(index == 0) {
             return true;
         } else {
