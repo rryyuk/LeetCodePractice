@@ -35,7 +35,6 @@ public class QInsertInLinkedListAtAPosition {
             newNode.next = tempNode.next;
             tempNode.next = newNode;
         }
-        
         System.out.println(head.val);
         System.out.println(head.next.val);
         System.out.println(head.next.next.val);
