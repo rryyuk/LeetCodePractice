@@ -10,7 +10,6 @@ class Solution {
 
         int leftMax = depthFind(root.left);
         int rightMax = depthFind(root.right);
-
         return Math.max(leftMax,rightMax) +1;
     }
 }
