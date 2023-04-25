@@ -10,7 +10,6 @@ class Solution {
         if(root.val >= maxVal || root.val <= minVal) {
             return false;
         }
-
         return isValid(root.left, minVal, root.val) && isValid(root.right, root.val, maxVal);
     }
 }
