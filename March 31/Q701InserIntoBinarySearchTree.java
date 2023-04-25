@@ -7,7 +7,6 @@ class Solution {
         } else if (root.val > val) {
             root.left = insertIntoBST(root.left, val);
         }
-        
         return root;
     }
 }
