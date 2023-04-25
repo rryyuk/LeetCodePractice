@@ -8,7 +8,7 @@ class Solution {
             return true;
         } 
         if(root.val >= maxVal || root.val <= minVal) {
-            return false;
+             return false;
         }
         return isValid(root.left, minVal, root.val) && isValid(root.right, root.val, maxVal);
     }
