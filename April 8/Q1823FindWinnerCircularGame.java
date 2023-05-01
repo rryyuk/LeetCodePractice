@@ -12,7 +12,6 @@ class Solution {
         circle.poll();
         
         }
-
         return circle.poll();
 
     }
