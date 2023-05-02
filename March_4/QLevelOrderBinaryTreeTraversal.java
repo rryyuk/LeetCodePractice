@@ -15,7 +15,6 @@ public class QLevelOrderBinaryTreeTraversal {
         Node(int val) {
             this.val = val;
         }
-
         Node(int val, Node left, Node right) {
             this.val = val;
             this.left = left;
