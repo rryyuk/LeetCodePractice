@@ -29,7 +29,6 @@ public class QLevelOrder {
 
         Queue<Node> levelOrder = new LinkedList<>();
         levelOrder.add(a);
-
         while(levelOrder.isEmpty() == false ){
             Node current = levelOrder.poll();
             System.out.print(current.val);
