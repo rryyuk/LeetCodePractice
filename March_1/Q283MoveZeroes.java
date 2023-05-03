@@ -10,7 +10,7 @@ public class Q283MoveZeroes {
             pointerOne++;
         }
         int pointerTwo = pointerOne +1;
-
+    
         while(pointerOne < nums.length && pointerTwo< nums.length) {
             if(nums[pointerTwo] != 0) {
 
