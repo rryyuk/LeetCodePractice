@@ -14,8 +14,7 @@ class Solution {
             if(totalSumOfArray - leftElementSum - nums[i] == leftElementSum ) {
                 return i;
             }
-        }
-        
+        }      
         return -1;
     }
 }
