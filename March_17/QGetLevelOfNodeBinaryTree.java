@@ -23,6 +23,7 @@ public class QGetLevelOfNodeBinaryTree {
             this.right = right;
         }
     }
+    
     public static void main(String[] argrs) {
         Node tree = new Node();
         Node a = new Node(1);
