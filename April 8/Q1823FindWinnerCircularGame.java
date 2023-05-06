@@ -10,7 +10,7 @@ class Solution {
             circle.add(circle.poll());
         }
         circle.poll();
-        
+ 
         }
         return circle.poll();
 
