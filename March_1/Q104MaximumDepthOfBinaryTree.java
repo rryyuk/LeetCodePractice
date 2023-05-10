@@ -11,7 +11,6 @@ class Node {
 }
 
 public class Q104MaximumDepthOfBinaryTree {
-
     // IGNORE
 //    public static class TreeNode {
 //        int val;
