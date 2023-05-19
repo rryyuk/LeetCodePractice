@@ -7,7 +7,7 @@ public class Q61RotateList {
         public ListNode() {}
         public ListNode(int val) { this.val = val; }
         public ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
+    } 
     public static ListNode rotateList(ListNode head, int k) {
         ListNode temp = head;
         if (head == null || k == 0) {
