@@ -5,7 +5,7 @@ class Solution {
 
     public boolean isValid(TreeNode root, long minVal,long maxVal) {
         if(root == null) {
-            return true;
+            return true; 
         } 
         if(root.val >= maxVal || root.val <= minVal) {
              return false;
