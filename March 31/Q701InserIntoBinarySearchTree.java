@@ -8,5 +8,5 @@ class Solution {
             root.left = insertIntoBST(root.left, val);
         } 
         return root;
-    }
+    } 
 }
