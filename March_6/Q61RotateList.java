@@ -16,7 +16,7 @@ public class Q61RotateList {
         int length = 0;
         while(temp.next!= null) {
             length++;
-            temp = temp.next;
+            temp = temp.next; 
         }
         temp.next = head;
 
