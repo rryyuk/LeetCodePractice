@@ -9,7 +9,7 @@ class Solution {
         for(int i = k-1;i>0;i--) {
             circle.add(circle.poll());
         }
-        circle.poll();
+        circle.poll(); 
  
         }
         return circle.poll();
