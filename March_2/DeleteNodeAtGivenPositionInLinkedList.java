@@ -19,7 +19,7 @@ public class DeleteNodeAtGivenPositionInLinkedList {
         ListNode nextNode = new ListNode();
 
         int n = 4;
-        int i = 1;
+        int i = 1; 
 
         if(head == null){
             System.out.println("null");
