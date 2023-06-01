@@ -13,7 +13,7 @@ public class DeleteNodeAtGivenPositionInLinkedList {
 
         ListNode c = new ListNode(4,null);
         ListNode b = new ListNode(3,c);
-        ListNode a = new ListNode(2,b);
+        ListNode a = new ListNode(2,b); 
         ListNode head = new ListNode(1,a);
         ListNode tempNode = head;
         ListNode nextNode = new ListNode();
