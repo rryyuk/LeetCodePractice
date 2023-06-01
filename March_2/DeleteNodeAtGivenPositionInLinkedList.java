@@ -9,7 +9,7 @@ public class DeleteNodeAtGivenPositionInLinkedList {
         public ListNode(int val) { this.val = val; }
         public ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
-    public static void main(String[] args){
+    public static void main(String[] args){ 
 
         ListNode c = new ListNode(4,null);
         ListNode b = new ListNode(3,c);
