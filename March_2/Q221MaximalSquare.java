@@ -7,7 +7,7 @@ public class Q221MaximalSquare {
         int m = matrix[0].length;
         int area = 0;
         int[][] newMatrix = new int [n+1][m+1];
-
+ 
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 if(matrix[i][j] == '1'){
