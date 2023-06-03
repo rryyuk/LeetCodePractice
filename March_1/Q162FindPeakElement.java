@@ -14,7 +14,7 @@ public class Q162FindPeakElement {
             }
         }
 
-        return high;
+        return high; 
     }
     public static void main(String[] args){
         int[] num = {1,2,1,3,5,6,4};
