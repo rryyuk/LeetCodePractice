@@ -16,7 +16,7 @@ public class Q88MergeSortedArray {
                 k--;
             } else {
                 nums1[k] = nums2[j];
-                j--;
+                j--; 
                 k--;
             }
         }
