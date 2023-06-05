@@ -9,7 +9,7 @@ public class Q88MergeSortedArray {
         int n = 3;
         int i = m - 1, j = n - 1, k = m + n - 1;
 
-        while (i >= 0 && j >= 0) {
+        while (i >= 0 && j >= 0) { 
             if (nums1[i] > nums2[j]) {
                 nums1[k] = nums1[i];
                 i--;
