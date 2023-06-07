@@ -9,7 +9,7 @@ class Solution {
 		boolean checkB = false;		
 		for (int i = 0; i < size; i++) {
 			TreeNode cur = levelQueue.poll();
-            if (cur.val == A) {
+            if (cur.val == A) { 
                 checkA = true;
             }
             if (cur.val == B){
