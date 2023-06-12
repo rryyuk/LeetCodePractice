@@ -7,7 +7,7 @@ import java.util.Queue;
 
 public class QGetLevelOfNodeBinaryTree {
     public static class Node {
-        int val;
+        int val; 
         Node left;
         Node right;
 
