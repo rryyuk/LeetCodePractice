@@ -8,7 +8,7 @@ class Solution {
         while(circle.size() != 1) {
         for(int i = k-1;i>0;i--) {
             circle.add(circle.poll());
-        }
+        } 
         circle.poll(); 
  
         }
