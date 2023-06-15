@@ -4,7 +4,7 @@ class Solution {
 
         for(int i = 1; i <= n; i++) {
             circle.add(i);
-        }
+        } 
         while(circle.size() != 1) {
         for(int i = k-1;i>0;i--) {
             circle.add(circle.poll());
