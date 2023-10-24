@@ -32,7 +32,7 @@ public class DeleteNodeAtGivenPositionInLinkedList {
                 i++;
             }
 
-            nextNode = tempNode.next;
+            nextNode =  tempNode.next;
             tempNode.next = nextNode.next;
             nextNode = null;
         }
