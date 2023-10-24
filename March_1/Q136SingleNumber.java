@@ -5,7 +5,7 @@ public class Q136SingleNumber {
         int nonRepeating = 0;
         for(int i=0; i<nums.length; i++){
 
-            nonRepeating ^= nums[i];
+            nonRepeating ^= nums[i]; 
         }
 
         return nonRepeating;

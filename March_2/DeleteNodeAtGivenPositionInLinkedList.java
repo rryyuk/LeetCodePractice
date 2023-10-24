@@ -3,23 +3,23 @@ package March_2;
 public class DeleteNodeAtGivenPositionInLinkedList {
 
     public static class ListNode {
-        public int val;
+        public int val; 
         public ListNode next;
         public ListNode() {}
         public ListNode(int val) { this.val = val; }
-        public ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
-    public static void main(String[] args){
+        public ListNode(int val, ListNode next) { this.val = val; this.next = next; } 
+    } 
+    public static void main(String[] args){ 
 
         ListNode c = new ListNode(4,null);
         ListNode b = new ListNode(3,c);
-        ListNode a = new ListNode(2,b);
+        ListNode a = new ListNode(2,b); 
         ListNode head = new ListNode(1,a);
         ListNode tempNode = head;
         ListNode nextNode = new ListNode();
 
         int n = 4;
-        int i = 1;
+        int i = 1; 
 
         if(head == null){
             System.out.println("null");

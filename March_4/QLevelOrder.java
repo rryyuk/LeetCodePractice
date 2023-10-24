@@ -7,14 +7,13 @@ public class QLevelOrder {
     public static class Node {
         int val;
         Node left;
-        Node right;
+        Node right; 
 
         Node() {
         }
         Node(int val) {
             this.val = val;
         }
-
         Node(int val, Node left, Node right) {
             this.val = val;
             this.left = left;
@@ -30,7 +29,6 @@ public class QLevelOrder {
 
         Queue<Node> levelOrder = new LinkedList<>();
         levelOrder.add(a);
-
         while(levelOrder.isEmpty() == false ){
             Node current = levelOrder.poll();
             System.out.print(current.val);

@@ -24,6 +24,7 @@ public class QSizeOfTree {
         }
         return(sizeOftree(root.left) + sizeOftree(root.right) + 1 );
     }
+    
     public static void main(String[] args) {
         Node tree = new Node();
         Node a = new Node(1);

@@ -46,7 +46,6 @@ public class QIntersectionOfTwoSortedLinkedLists {
                 temp1 = temp1.next;
             }
         }
-
         System.out.println(head3.val);
         System.out.println(head3.next.val);
         System.out.println(head3.next.next.val);
